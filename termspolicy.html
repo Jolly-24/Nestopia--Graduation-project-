@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Policy</title>
+    <link rel="stylesheet" href="css/allproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,500;0,600;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- navv -->
+   <nav>
+    <div class="head-nav">
+      <div class="container">
+        <div class="head">
+          <div class="top">
+         <div onclick=showsidebar() class="bar"><i class="fa-solid fa-bars"></i></div> 
+          <!-- <div class="logo"><a class="logo" href="index.html">Nestopia</a></div> -->
+         <div class="logo"><a class="logo" href="index.html"><img src="imgs/download-removebg-preview.png"></a></div>
+
+        </div>
+
+        <div class="search">
+          <form action="">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="What are you looking for?">
+          </form>
+      </div>
+
+          <div class="icons first">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <div class="dropdown">
+              <a onclick="myFunctiondrop()" class="dropbtn">Account <i class="fa-regular fa-user"></i></a>
+              <div id="myDropdown" class="dropdown-content">
+               <button type="button" ><a class="button" href="signin.html"><i class="fa-solid fa-right-from-bracket"></i> Sign in</a> </button>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="orders.html"><i class="fa-solid fa-boxes-packing"></i> Orders</a>
+                <a href="address.html"><i class="fa-solid fa-location-dot"></i> Address</a>
+                <a style="color: #707070;" class="out" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+              </div>
+            </div>
+            <a href="wishlist.html">Wishlist <i class="fa-regular fa-heart"></i></a>
+            <a onclick="cartsideshow()">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div class="icons second">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <div class="dropdown2">
+              <a onclick="myFunctiondrop2()" class="dropbtn2"> <i class="fa-regular fa-user"></i></a>
+              <div id="myDropdown2" class="dropdown-content2">
+               <span> Nestopia <i onclick=" closedropdown()" class="fa-solid fa-xmark close-card"></i></span>
+               <button type="button" ><a class="button" href="signin.html"><i class="fa-solid fa-right-from-bracket"></i> Sign in</a> </button>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="orders.html"><i class="fa-solid fa-boxes-packing"></i> Orders</a>
+                <a href="address.html"><i class="fa-solid fa-location-dot"></i> Address</a>
+                <a class="out" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+              </div>
+            </div>
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a onclick="cartsideshow()"> <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+      </div>
+    </div>
+      <div class="menu">
+        <div class="container">
+      <ul class="main-nav">
+        <li style="display: flex; align-items: center;" ><a href="service.html" >Services </a><i style="cursor: pointer;"  onclick=myFunctionzero() class="fa-solid fa-caret-down icon1 "></i>
+         <!-- start Megamenu -->
+         <div class="mega-menu zero" id="mega-menu">
+          <ul class="links">
+          <li>
+            <a href="plumbers.html"> Plumbers</a>
+          </li>
+          <li>
+            <a href="electricals.html">Electricals</a>
+          </li>
+          <li>
+            <a href="carpenters.html">Carpenters</a>
+          </li>
+          <li>
+            <a href="painters.html">Painters</a>
+          </li>
+          </ul>
+          
+        </div>
+    </li>
+        <!-- end megamenu --></li>
+        <li style="display: flex; align-items: center;"><a href="furniture.html" >Master Room  </a><i  onclick=myFunctionone() class="fa-solid fa-caret-down icon2"></i>
+          
+        <!-- start Megamenu -->
+        <div class="mega-menu one">
+          <ul class="links">
+          <li>
+            <a href="Beds.html"> Beds</a>
+          </li>
+          <li>
+            <a href="electricals.html">Chairs</a>
+          </li>
+          <li>
+            <a href="carpenters.html">Sofas</a>
+          </li>
+          <li>
+            <a href="#our-skills"> Tables</a>
+          </li>
+          <li>
+            <a href="#events">Room Sets</a>
+          </li>
+          </ul>
+        </div>
+    </li>
+        <!-- end megamenu -->
+        <li style="display: flex; align-items: center;"><a href="homedecor.html" >Kids Room</a><i onclick=myFunctiontwo() class="fa-solid fa-caret-down icon3"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu two">
+      <ul class="links">
+        <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="electricals.html">Chairs</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Sofas</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Tables</a>
+        </li>
+        <li>
+          <a href="#events">Room Sets</a>
+        </li>
+      </ul>
+     
+    </div>
+    </li>
+    <!-- end megamenu -->
+        <li style="display: flex; align-items: center;" ><a href="#features" >Dinning Room</a><i onclick=myFunctionthree() class="fa-solid fa-caret-down icon4"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu three">
+      <ul class="links">
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#services">Mirrors</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Storages</a>
+        </li>
+        <li>
+          <a href="#work-steps">Dinning room sets</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+    <!-- end megamenu -->
+        <li style="display: flex; align-items: center;"  ><a href="#features" >Living Room</a><i onclick=myFunctionfour() class="fa-solid fa-caret-down icon5"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu four">
+      <ul class="links">
+        <li>
+          <a href="#"> Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Side tables</a>
+        </li>
+        <li>
+          <a href="#services">Credenza</a>
+        </li>
+        <li>
+          <a href="#our-skills">lighting</a>
+        </li>
+        <li>
+          <a href="#work-steps">Cabinet</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+    <!-- end megamenu -->
+    <li style="display: flex; align-items: center;"><a href="#features" >Kitchen</a><i onclick=myFunctionfive() class="fa-solid fa-caret-down icon6"></i>
+           <!-- start Megamenu -->
+           <div class="mega-menu five">
+            <ul class="links">
+              <li>
+                <a href="#"> Countertops </a>
+              </li>
+              <li>
+                <a href="#">Buffet</a>
+              </li>
+              <li>
+                <a href="#services">Tables</a>
+              </li>
+              <li>
+                <a href="#our-skills">Stoves</a>
+              </li>
+              <li>
+                <a href="#work-steps">Refigerator</a>
+              </li>
+            </ul>
+          </div>
+            <!-- end megamenu -->
+          </li>
+          <li style="display: flex; align-items: center;" ><a href="#features" >Bathroom</a><i onclick=myFunctionsix() class="fa-solid fa-caret-down icon7"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu six">
+             <ul class="links">
+               <li>
+                 <a href="#"> Bathtub</a>
+               </li>
+               <li>
+                 <a href="#">Toilet</a>
+               </li>
+               <li>
+                 <a href="#services">Shower</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Freestanding Bath</a>
+               </li>
+               <li>
+                 <a href="#work-steps">Bathroom sets</a>
+               </li>
+             </ul>
+            
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          <li style="display: flex; align-items: center;"><a href="#features" >Home Decor</a><i onclick=myFunctionseven() class="fa-solid fa-caret-down icon8"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu seven">
+             <ul class="links">
+               <li>
+                 <a href="#">Accessories</a>
+               </li>
+               <li>
+                 <a href="#">Mirrors</a>
+               </li>
+               <li>
+                 <a href="#services"> Rug</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Plant</a>
+               </li>
+               <li>
+                 <a href="#work-steps">Frames</a>
+               </li>
+             </ul>
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          <li style="display: flex; align-items: center;"><a href="#features" >Painting & Floor</a><i onclick=myFunctioneight() class="fa-solid fa-caret-down icon8"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu eight">
+             <ul class="links">
+               <li>
+                 <a href="#">Ceramic</a>
+               </li>
+               <li>
+                 <a href="#">Paint colors</a>
+               </li>
+               <li>
+                 <a href="#services"> Paint tools</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Marble</a>
+               </li>
+               
+             </ul>
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          </ul>
+    </div>
+    </div>
+  </div>
+  <div class="backbar">
+  <div class="respside-bar">
+   <span class="catigories">All Catigories<i onclick=hidesidebar() class="fa-solid fa-xmark"></i></span> 
+    <ul class="side-menu">
+      <li ><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="service.html">Services </a><i onclick=toggleone() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open1 ">
+        <li>
+          <a href="plumbers.html"> Plumbers</a>
+        </li>
+        <li>
+          <a href="electricals.html">Electricals</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Carpenters</a>
+        </li>
+        <li>
+          <a href="painters.html">Painters</a>
+        </li>
+
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title " href="#">Master Room </a><i  onclick=toggletwo() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open2">
+       <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#">Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Room Sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Kids Room </a><i onclick=togglethree() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open3">
+        <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="electricals.html">Chairs</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Sofas</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Tables</a>
+        </li>
+        <li>
+          <a href="#events">Room Sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Dinning Room </a><i onclick=togglefour() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open4">
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#services">Mirrors</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Storages</a>
+        </li>
+        <li>
+          <a href="#work-steps">Dinning room sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Living Room </a><i  onclick=togglefive() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open5">
+        <li>
+          <a href="#"> Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Side tables</a>
+        </li>
+        <li>
+          <a href="#services">Credenza</a>
+        </li>
+        <li>
+          <a href="#our-skills">lighting</a>
+        </li>
+        <li>
+          <a href="#work-steps">Cabinet</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Kitchen </a><i  onclick=togglesix() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open6">
+        <li>
+          <a href="#"> Countertops </a>
+        </li>
+        <li>
+          <a href="#">Buffet</a>
+        </li>
+        <li>
+          <a href="#services">Tables</a>
+        </li>
+        <li>
+          <a href="#our-skills">Stoves</a>
+        </li>
+        <li>
+          <a href="#work-steps">Refigerator</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Bathroom </a><i  onclick=toggleseven() class="fa-solid fa-arrow-right"></i>
+      </div>
+        <ul class="small-menu open7">
+          <li>
+            <a href="#"> Bathtub</a>
+          </li>
+          <li>
+            <a href="#">Toilet</a>
+          </li>
+          <li>
+            <a href="#services">Shower</a>
+          </li>
+          <li>
+            <a href="#our-skills">Freestanding Bath</a>
+          </li>
+          <li>
+            <a href="#work-steps">Bathroom sets</a>
+          </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Home Decor </a><i onclick=toggleeight()  class="fa-solid fa-arrow-right"></i></div>
+      <ul class="small-menu open8">
+        <li>
+          <a href="#">Accessories</a>
+        </li>
+        <li>
+          <a href="#">Mirrors</a>
+        </li>
+        <li>
+          <a href="#services"> Rug</a>
+        </li>
+        <li>
+          <a href="#our-skills">Plant</a>
+        </li>
+        <li>
+          <a href="#work-steps">Frames</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Painting & Floor</a><i onclick=togglenine()  class="fa-solid fa-arrow-right"></i></div>
+      <ul class="small-menu open9">
+        <li>
+          <a href="#">Ceramic</a>
+        </li>
+        <li>
+          <a href="#">Paint colors</a>
+        </li>
+        <li>
+          <a href="#services"> Paint tools</a>
+        </li>
+        <li>
+          <a href="#our-skills">Marble</a>
+        </li>
+      </ul></li>
+    </ul>
+  </div>
+</div>
+<!--start cart side bar -->
+<div class="cart-sidebar-overlay">
+  <div class="cart-side-bar">
+    <i onclick="closesidebarcart()" class="fa-solid fa-circle-xmark close-cartside"></i>
+    <p class="first-p">My Cart <span class="item-no">2 items</span></p>
+    <div class="total-money-sidebar">
+      <h4>Cart Summary</h4>
+      <p class="side-amount">Subtotal <span>56000 EGP</span></p>
+    </div>
+    <div class="content-cart-bar">
+      <img src="imgs/02.jpg">
+      <div class="product-cart-info">
+        <h3>Beech Wood and Linen Fabric L-Shape Sofa - Grey</h3>
+        <h3 class="sname"><i class="fa-solid fa-store"></i>Store name</h3>
+        <p class="price">
+          EGP 25000
+        </p>
+        <div class="buttons">
+          <div class="add">
+              <span class="minus">-</span>
+              <span class="num">01</span>
+              <span class="plus">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-cart-bar">
+      <img src="imgs/avatar-03.png">
+      <div class="product-cart-info">
+        <h3>Hazem Khaled</h3>
+        <h3 class="sname">Plumber</h3>
+      </div>
+    </div>
+    <div class="side-checkout">
+      <a href="cart.html">
+      <button type="button">Go To Cart</button>
+    </a>
+    </div>
+    <div class="cart-empty">
+      <div class="empty-cart">
+        <img src="imgs/cartempty.png">
+        <p>Your cart is empty</p>
+        <span>let’s do some shopping</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--end cart side bar -->
+  </nav>
+<!-- end navvv -->
+    <div class="policy-container" style="margin-top: 150px;">
+        <div class="container">
+   <p>
+    <h2>Terms of Use</h2>
+    Welcome to Nestopia. Nestopia is a social platform connecting home owners and home professionals into a new world of home design.
+    <br>
+    These terms of use sets forth the agreement between you and Nestopia Ltd. It governs your use of the products and services we offer through our website and applications (collectively the "Site", "Homzmart" or "Homzmart Platform"). This agreement provides important information to you, including information about your obligations about your content, our limitation of liability to you, and your agreement to resolve any disputes by individual arbitration and to waive the right to participate in a class action. By accessing Homzmart you are agreeing to the following terms.
+    <br>
+    Nestopia may provide a translation of the english version of the terms of use into other languages. Any translation of the terms of use into other languages is for your own convenience only and the english version governs the terms of your relationship with Homzmart. Furthermore, if there are any inconsistencies between the english version of the terms and any translation, the english version of the terms shall prevail.
+    <br>
+    <h2>Using Nestopia</h2>
+    Registration. Access to certain functionalities of the Homzmart platform will require you to register with us. If you register with Homzmart, you agree to provide us accurate information and update it as needed for accuracy. We treat personally identifiable information you provide as part of registration in accordance with our privacy policy. You may register on Homzmart using a third-party service (e.g., Facebook); whereby you give us permission to access, store, and use your information from that service as permitted by that service and as may be described in our privacy policy. If you believe your account may have been compromised or misused, contact us immediately at Homzmart customer support.
+    Privacy Policy. You can access our privacy policy anytime through privacy policy. By accessing the Homzmart platform, you agree to accept the privacy policy, regardless of whether you are a registered user.
+    Profile for Professionals. If you are a professional services provider, you may set up a Professional Profile. If you do, you give us the right to list your Professional Profile in our directory of service providers, and you will be able to connect with others on the Nestopia platform while identified by your professional profile. Your professional profile is subject to our professional profile policy.
+    Termination. Homzmart holds the absolute right at its own discretion to permanently or temporarily suspend your use of the site or the service at any time for any reason, without any notice or liability to you. We may terminate your account at any time for any or no reason, including if you violate any Nestopia policy. Upon termination of your use of the service, certain provisions will survive termination.
+   <h3> Acceptable Use</h3>
+    As part of Nestopia’s terms of use policy, you agree not to use the information, services or any other part of the Homzmart platform to take any action or actions that:
+    <br>
+    Are contrary to Nestopia's public image, goodwill or reputation.<br>
+    Promote any illegal activity or content, including without limitation child or animal abuse, violence, illegal drug use, and underage drinking.
+    Infringe on our or any third party's copyright, patent, trademark, trade secret or other proprietary rights or rights of publicity or privacy.
+    Express or imply that any of your statements, activities or causes are endorsed by us, without our prior written consent in each instance.
+    Violate any applicable law, statute, ordinance or regulation, or encourage any conduct that could constitute a criminal offense or give rise to civil liability.
+    Are libelous, defamatory, threatening, harassing, invasive of privacy, abusive, tortious, hateful, discriminatory, pornographic or obscene.
+    Transmit any trade secret or other material, non-public information about any person, company or entity without the authorization to do so.
+    Restrict or inhibit any other visitor from using the Nestopia platform, including, without limitation, by means of "hacking" or defacing any portion of the Homzmart platform.
+    Modify, adapt, sub-license, translate, sell, reverse engineer, decompile, or disassemble any portion of the Homzmart platform.
+    Remove any copyright, trademark, or other proprietary rights notices contained in the Homzmart platform.<br>
+    Sublicense, sell, rent, lease, transfer, assign, or convey any rights under the terms to any third party, or otherwise commercially exploit or profit from the information or content of the Homzmart platform, or any portion thereof, in any manner whatsoever, except as expressly permitted herein.
+    "Frame" or "Mirror" any part of the Nestopia platform without our prior written authorization.<br><br>
+    Distribute any virus, worm or other similar or deleterious files, scripts or programming routines.
+    Interfere with or disrupt any services or equipment with the intent of causing an excessive or disproportionate load on the infrastructure of Homzmart or its licensors or suppliers.
+    Involve the preparation or distribution of junk mail, spam, chain letters, pyramid schemes, or other deceptive or unsolicited bulk or commercial email.
+    Use any robot, spider, site search/retrieval application, or other manual or automatic device or process to retrieve, index, "data mine" the Homzmart Platform or in any way reproduce or circumvent the navigational structure or presentation of the Nestopia platform or its contents, authentication and security measures.
+    Forget headers or otherwise manipulate identifiers in order to disguise the origin of any submission.
+    Execute any form of network monitoring or run a network analyzer or packet sniffer or other technology to intercept, decode, mine or display any packets used to communicate between the Homzmart platform's servers or any data not intended for you.
+    Harvest or collect information about any Homzmart platform visitors or members without their express consent; and/or
+    Contains any reference to or likeness of any identifiable third parties, unless consent has been obtained from all such individuals and their parent/legal guardian if they are under the age of majority in their jurisdiction of residence.
+    <h2>Your Content</h2>
+    Definition of Your Content. The Nestopia platform enables you to post material, including without limitation photos, profile pictures, messages, and commentary. You may also post reviews of third-party service providers, third-party products, or third-party services (“Reviews”). All material that you display on the Homzmart platform will be referred to collectively as “Your Content.” You acknowledge and agree that, as part of using the Homzmart platform, Your content may be viewed by the general public and will not be treated as private or confidential.
+    License and Permission to Use Your Content. You hereby grant to us and our affiliates, licensees and sublicensees, without compensation to you or others, a non-exclusive, perpetual, irrevocable, royalty-free, fully paid-up, worldwide license (including the right to sublicense through multiple tiers) to use, reproduce, process, adapt, publicly perform, publicly display, modify, prepare derivative works, publish, transmit and distribute your content, or any portion thereof, throughout the world in any format, media or distribution method (whether now known or hereafter created) for the duration of any copyright or other rights in your content. Such permission will be perpetual and may not be revoked for any reason, to the maximum extent permitted by law. Further, to the extent permitted under applicable law, you waive and release and covenant not to assert any moral rights that you may have in your content. If you identify yourself by name or provide a picture or audio or video recording of yourself, you further authorize us and our affiliates, licensees and sublicensees, without compensation to you or others, to reproduce, print, publish and disseminate in any format or media (whether now known or hereafter created) your name, voice and likeness throughout the world, and such permission will be perpetual and cannot be revoked for any reason, except as required by the applicable law. You further agree that we may use your content in any manner that we deem appropriate or necessary.
+    Ownership. We acknowledge and agree that you, or your licensors, as applicable, retain ownership of any and all copyrights in your content, subject to the non-exclusive rights granted to us in the paragraph above, and that no ownership of such copyrights is transferred to us under this agreement. Further, with respect to your content in the form of photos, and subject to Homzmart product and user experience considerations: (a) we will use commercially reasonable efforts to maintain the attribution of such photos as submitted by you, and (b) we will not license or sublicense to third parties individual photos or collections of photos, except in each case for Homzmart Business Purposes. “Homzmart Business Purposes” means any use in connection with a Homzmart-branded or co-branded website, application, publication or service, or any use which advertises, markets or promotes the Homzmart platform, the services or the information it contains, Homzmart, or its affiliates. Homzmart business purpose specifically includes the use of your content on the Homzmart platform in connection with features and functions offered by Homzmart to our users that enable them to view and interact with your content.
+    Your Responsibilities for Your Content. By posting your content on the Homzmart platform, you represent and warrant to us that you have the ownership rights, or you have obtained all needed licenses or permissions from any necessary parties, to use your content in this manner. This includes obtaining the right to grant us the rights to the use of your content in accordance with this agreement. You are in the best position to judge whether your content is in violation of intellectual property or personal rights of any third-party.&nbsp;You accept full responsibility for avoiding infringement of the intellectual property or personal rights of others in connection with your content. You are responsible for ensuring that your content does not violate any of those Terms of Use or any of Homzmart’s copyright and trademark policy or any applicable law or regulation. You agree to pay all royalties, fees and any other monies owed to any person by reason of your content.
+    Limits. We reserve the right to edit, abridge, or remove your content, in whole or part, for any reason (which may include a reported violation of our Terms of Use or copyright and trademark policy). We reserve the right to edit, refuse to post or remove your content submitted by you for any reason without notice.
+    Reviews. Nestopia may enable you to post reviews. Reviews are considered your content.<br>
+    The site is simply a channel for communication, where users can meet and interact with each other in order to buy and sell goods
+    <br>Nestopia does not sell or purchase goods, and it can not be a party to any transaction and is not binding in any way whatsoever on behalf of any of the seller or purchaser who uses the site.
+    <br>Nestopia does not guarantee that the buyer or seller will either accept the transaction or accept the seller to return or refund the price.
+    <br>You will not assume the responsibility of users for the content, verbs, reactions, goods or information they display
+    <br>Nestopia is not responsible for the non-compliance or conclusion of a contract between (the users, nor is responsible for the transfer of legal ownership of the goods from the seller to the buyer). As the contract for the sale of any goods will be bilaterally between the seller and the buyer. HOMZMART has no right, authority or interest in any goods, and HOMZMART has no obligation or claims in respect of such goods for which a contract is made between the seller and the buyer.
+    <br>Nestopia is not liable for any unsatisfactory or late performance by any of the parties, nor for any loss, malfunction or delay due to goods unavailable or delayed delivery.
+    <br>Nestopia is not required to mediate or resolve any dispute or dispute between users.
+    <br>Nestopia does not control and does not guarantee the quality, security and legitimacy of any advertised merchandise. It does not control the users' honesty in terms of contents and what they include in the description of their goods, nor in the ability of sellers to market their goods or the purchaser's payment of the goods.
+    <br>Nestopia does not guarantee the quality, value or marketability of the products and it is the responsibility of the seller and buyer to check all goods before selling them
+    <br>Nestopia is not a supplier or manufacturer of any kind of goods sold or purchased on the site.
+    <br>Nestopia does not represent or guarantee the user's specifications for their legitimacy, credibility, and identity.
+    <br>Nestopia is not responsible for the level of security of any links (link) outside the site and if the address of the link on the pages of Homzmart displayed on the pages of third parties, and that Homzmart does not guarantee the absence of viruses or any destructive means, you know and agree that Homzmart is not responsible for the content or the presence of such sites.
+    Users only have to agree between them on the terms, terms and conditions of delivery and payment, among themselves, since Nestopia is not responsible for such arrangements, and only provides optional services for shipping and facilitating payment.
+    Nestopia does not accept any claims arising out of errors or omissions, whether obtained by third parties or third parties.
+    You absolve Nestopia and / or any of its officers and representatives of any claim, dispute, costs, damages, liability, and any direct loss to any party arising out of an act done by the users of the site and you specifically waive any claim in this regard show.
+    By posting a Review, you acknowledge and agree that:
+    <br>
+    i. You are not (a) a director, employee, officer, or principal (“Interested Party”) of the business whose products or services are the subject of the review, (b) an Interested Party of a competitor of the business or individual whose products or services are the subject of the review; or (c) related in any way to the business or individual whose products or services are the subject of the review; ii. Your review is based upon your first-hand experience with the products, or business or individual whose services, are the subject of the review; iii. Your review is accurate, truthful and complete;&nbsp;
+    iv. Your review does not violate any of our policies, including through libelous, defamatory, threatening, harassing, invasive of privacy, abusive, tortious, hateful, discriminatory, pornographic or obscene content; as determined by Homzmart in our sole and absolute discretion; v. If you have received monetary compensation or other incentive to write and submit a review, it will be clearly and conspicuously stated in the text of your review, even if the amount or value of such incentive is small; vi. You will not use the posting or removing of your review to demand payment from any business or individual, except that bona fide refund requests made in connection with a bad customer experience are acceptable.
+    <br>
+    Our Content and Materials<br>
+    Definition of Our Content and Materials. All intellectual property in or related to the Nestopia platform (specifically including, but not limited to our software, the Homzmart marks, and the Homzmart logo, but excluding your content), is the property of Homzmart Ltd., its subsidiaries and affiliates or its licensors (“Our Content and Materials”).
+    Our License to You. Subject to these terms of use, including the restrictions below, we grant you a limited, non-exclusive license to use and access our content and materials in connection with your use of the Homzmart platform. Except as expressly agreed to otherwise by us (such as your eligibility for creation of a Professional Profile or your entering into a vendor, seller, advertiser, or other agreement with us), your use of the Homzmart platform must be limited to personal, non-commercial use. We may terminate this license at any time for any reason. Except for the rights and license granted in these terms, we reserve all other rights and grant no other rights or licenses, implied or otherwise.
+    No Endorsement or Verification. Please note that the Nestopia platform enables access to third-party content, products and services, and it offers interactions with third-parties over which we have no control. We assume no responsibility for, nor do we endorse or verify the content, offerings or conduct of third-parties (including but not limited to the products or services offered by third-parties or the descriptions of the products or services offered by third-parties). Participation or availability on the Homzmart platform does not amount to endorsement or verification by us. We make no warranties or representations with respect to the accuracy, completeness or timeliness of any content posted on the Homzmart platform by anyone.
+    Restrictions. Except as expressly provided in these terms, you agree not to use, modify, reproduce, distribute, sell, license, reverse engineer, decompile, or otherwise exploit our content and materials without our express written permission. Homzmart’s permission to you for your use of the Homzmart platform expressly excludes commercial use by you of any information concerning product descriptions or professional listings for the benefit of another merchant. You expressly are prohibited from any use of data mining, robots, or similar data gathering and extraction tools in your use of the Homzmart platform. You may view and print a reasonable number of copies of web pages located on the Homzmart platform for your own personal use, provided that you retain all proprietary notices contained in the original materials, including attribution to Homzmart.
+    Ownership. You acknowledge and agree that the Nestopia platform and Nestopia marks will remain the property of Nestopia. The content, information and services made available on the Homzmart platform are protected by international copyright, trademark, and other laws, and you acknowledge that these rights are valid and enforceable. You acknowledge that you do not acquire any ownership rights by using the Homzmart platform.
+    Mobile Devices Terms<br>
+    If you're accessing Nestopia from a mobile device using a Nestopia Mobile Application (the "Application"), the following terms and conditions ("Terms of Use") apply to you in addition to the applicable Mobile Privacy and Legal Notice or End User License Agreement, as the case may be. Your use of the Application confirms your agreement to these Terms of Use.
+    <br>
+    Reporting Violations of Your Intellectual Property Rights
+    We have adopted and implemented a copyright and trademark policy. For more information, including detailed information about how to submit a request for takedown if you believe content on the Homzmart platform infringes your intellectual property rights, please read our copyright and trademark policy. We have no obligation to delete content that you personally may find objectionable or offensive. We endeavor to respond promptly to requests for content removal, consistent with our policies described above and applicable law.
+    <br>
+    Disclaimers and Limitations of Liability
+    PLEASE READ THIS SECTION CAREFULLY SINCE IT LIMITS THE LIABILITY OF Nestopia ENTITIES TO YOU
+    THE “Nestopia ENTITIES” MEANS Nestopia LTD., AND ANY SUBSIDIARIES, AFFILIATES, RELATED COMPANIES, SUPPLIERS, LICENSORS AND PARTNERS, AND THE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS AND REPRESENTATIVES OF EACH OF THEM. EACH PROVISION BELOW APPLIES TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW:
+    <br>
+    a. WE ARE PROVIDING YOU THE SITE, SERVICES, INFORMATION, PRODUCTS, PRODUCT DESCRIPTIONS, AND THIRD-PARTY CONTENT ON AN “AS IS” AND “AS AVAILABLE” BASIS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. WITHOUT LIMITING THE FOREGOING, THE HOMZMART ENTITIES EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, TITLE, ACCURACY AND COMPLETENESS, UNINTERRUPTED OR ERROR-FREE SERVICE, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR TRADE USAGE. b. THE HOMZMART ENTITIES MAKE NO PROMISES WITH RESPECT TO, AND EXPRESSLY DISCLAIM ALL LIABILITY, TO THE MAXIMUM EXTENT PERMITTED BY LAW, FOR: (i) CONTENT POSTED BY ANY THIRD-PARTY ON THE SITE, (ii) THE PRODUCT DESCRIPTIONS OR PRODUCTS, (iii) THIRD-PARTY SITES AND ANY THIRD-PARTY PRODUCT OR SERVICE LISTED ON OR ACCESSIBLE TO YOU THROUGH THE SITE, AND (iv) THE QUALITY OR CONDUCT OF ANY THIRD-PARTY YOU ENCOUNTER IN CONNECTION WITH YOUR USE OF THE SITE. c. YOU AGREE THAT UNDER THE MAXIMUM EXTENT PERMITTED BY LAW, THE HOMZMART ENTITIES WILL NOT BE LIABLE TO YOU UNDER ANY THEORY OF LIABILITY. WITHOUT LIMITING THE FOREGOING, YOU AGREE THAT THE HOMZMART ENTITIES SPECIFICALLY WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR EXEMPLARY DAMAGES, LOSS OF PROFITS, BUSINESS INTERRUPTION, REPUTATIONAL HARM, OR LOSS OF DATA (EVEN IF THE HOMZMART ENTITIES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR SUCH DAMAGES ARE FORESEEABLE) ARISING OUT OF AND IN ANY WAY CONNECTED WITH YOUR USE OF, OR INABILITY TO USE, THE SITE OR PRODUCTS. YOUR USE OF THE SITE, PRODUCTS, INFORMATION, OR SERVICES IS AT YOUR SOLE RISK.
+    <br>
+    Indemnification
+    You will indemnify and hold harmless Nestopia and its affiliates and our and their respective officers, directors, agents and employees (each an “Indemnified Party”), from any claim made by any third party, together with any amounts payable to the third party whether in settlement or as may otherwise be awarded, and reasonable legal costs incurred by any of the indemnified parties, arising from or relating to your use of the Homzmart, any alleged violation by you of the applicable terms, and any alleged violation by you of any applicable law or regulation. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter subject to indemnification by you, but doing so will not excuse your indemnity obligations.
+    <br>
+    General
+    We reserve the right at any time to: (i) change the terms and conditions of this agreement, consistent with applicable law; (ii) change the Homzmart platform, including eliminating or discontinuing any information or services or other features in whole or in part; and (iii) deny or terminate your Homzmart account, or use of and access to the Homzmart platform. Any changes we make to the terms and conditions will be effective immediately upon our making such changes available on the Homzmart platform. You agree that your continued use of the Homzmart platform after such changes constitutes your acceptance of such changes. If you do not agree with any of the updates to this agreement, you should not use the Homzmart platform. Be sure to return to this page periodically to ensure your familiarity with the most current version of the terms of use.
+    <br>
+    Cash on Delivery (COD) Fee
+    For orders paid using COD, an additional fee will apply. This fee will be displayed during checkout in your order summary
+    <br>
+    Indemnification
+    All promotional codes and vouchers are not eligible to be used on Home Appliances & Electronics</p>
+</div></div>
+        <!-- scroll up -->
+        <button class="scroll"><i class="fa-solid fa-circle-arrow-up"></i></button>
+        <!-- end scroll -->
+      <!-- footer -->
+      <footer>
+        <div class="container">
+      <div class="topp">
+        <div class="links">
+          <div class="links-column">
+            <h2>Company</h2>
+            <a href="#">About us</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="links-column">
+            <h2>Important Links</h2>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Terms and conditions</a>
+            
+          </div>
+          <div class="links-column">
+            <h2>Need Help</h2>
+            <a href="#"><i class="fas fa-envelope"></i>Nestopia24@gmail.com</a>
+          </div>
+          </div>
+        </div>
+        <div class="bottom">
+        <div class=" socials-column">
+          <h2> Social media</h2>
+          <p>Follow us</p>
+          <div class="socials">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-google"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-linkedin-in"></i>
+          <a href="#" >
+            <i class="fa-brands fa-square-instagram"></i>
+        
+           
+          </div>
+        </div>
+        <div class="pay-method">
+          <h2>We Accept</h2>
+          <div class="payment">
+          <img src="imgs/visa.png">
+          <img src="imgs/valu.jpeg">
+          <img src="imgs/ins.webp">
+          <img src="imgs/master.png">
+        </div>
+      </div>
+        </div>
+        <p class="copy-right">@ 2024 all rights reserved</p>
+      </div>
+      </footer>
+    <!-- </footer> -->
+     <script src="js/main.js"></script>
+<script>
+
+// +&- product
+const plus=document.querySelector(".plus");
+const minus=document.querySelector(".minus");
+const num=document.querySelector(".num");
+
+let a=1;
+plus.addEventListener("click",()=>{
+    a++;
+    a=(a<10)?"0"+a:a;
+    num.innerText=a;
+});
+
+minus.addEventListener("click",()=>{
+    if(a>1){
+    a--;
+    a=(a<10)?"0"+a:a;
+    num.innerText=a;
+    }
+});
+// --------------------------------------------------------------------------
+
+</script>
+</body>
+</html>

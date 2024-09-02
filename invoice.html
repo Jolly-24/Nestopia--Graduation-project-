@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="css/allproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,500;0,600;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- navv -->
+   <nav>
+    <div class="head-nav">
+      <div class="container">
+        <div class="head">
+          <div class="top">
+         <div onclick=showsidebar() class="bar"><i class="fa-solid fa-bars"></i></div> 
+          <!-- <div class="logo"><a class="logo" href="index.html">Nestopia</a></div> -->
+         <div class="logo"><a class="logo" href="index.html"><img src="imgs/download-removebg-preview.png"></a></div>
+
+        </div>
+
+        <div class="search">
+          <form action="">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="What are you looking for?">
+          </form>
+      </div>
+
+          <div class="icons first">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <div class="dropdown">
+              <a onclick="myFunctiondrop()" class="dropbtn">Account <i class="fa-regular fa-user"></i></a>
+              <div id="myDropdown" class="dropdown-content">
+               <button type="button" ><a class="button" href="signin.html"><i class="fa-solid fa-right-from-bracket"></i> Sign in</a> </button>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="orders.html"><i class="fa-solid fa-boxes-packing"></i> Orders</a>
+                <a href="address.html"><i class="fa-solid fa-location-dot"></i> Address</a>
+                <a style="color: #707070;" class="out" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+              </div>
+            </div>
+            <a href="wishlist.html">Wishlist <i class="fa-regular fa-heart"></i></a>
+            <a onclick="cartsideshow()">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+          <div class="icons second">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <div class="dropdown2">
+              <a onclick="myFunctiondrop2()" class="dropbtn2"> <i class="fa-regular fa-user"></i></a>
+              <div id="myDropdown2" class="dropdown-content2">
+               <span> Nestopia <i onclick=" closedropdown()" class="fa-solid fa-xmark close-card"></i></span>
+               <button type="button" ><a class="button" href="signin.html"><i class="fa-solid fa-right-from-bracket"></i> Sign in</a> </button>
+                <a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+                <a href="orders.html"><i class="fa-solid fa-boxes-packing"></i> Orders</a>
+                <a href="address.html"><i class="fa-solid fa-location-dot"></i> Address</a>
+                <a class="out" href="#"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a>
+              </div>
+            </div>
+            <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+            <a onclick="cartsideshow()"> <i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+      </div>
+    </div>
+      <div class="menu">
+        <div class="container">
+      <ul class="main-nav">
+        <li style="display: flex; align-items: center;" ><a href="service.html" >Services </a><i style="cursor: pointer;"  onclick=myFunctionzero() class="fa-solid fa-caret-down icon1 "></i>
+         <!-- start Megamenu -->
+         <div class="mega-menu zero" id="mega-menu">
+          <ul class="links">
+          <li>
+            <a href="plumbers.html"> Plumbers</a>
+          </li>
+          <li>
+            <a href="electricals.html">Electricals</a>
+          </li>
+          <li>
+            <a href="carpenters.html">Carpenters</a>
+          </li>
+          <li>
+            <a href="painters.html">Painters</a>
+          </li>
+          </ul>
+          
+        </div>
+    </li>
+        <!-- end megamenu --></li>
+        <li style="display: flex; align-items: center;"><a href="furniture.html" >Master Room  </a><i  onclick=myFunctionone() class="fa-solid fa-caret-down icon2"></i>
+          
+        <!-- start Megamenu -->
+        <div class="mega-menu one">
+          <ul class="links">
+          <li>
+            <a href="Beds.html"> Beds</a>
+          </li>
+          <li>
+            <a href="electricals.html">Chairs</a>
+          </li>
+          <li>
+            <a href="carpenters.html">Sofas</a>
+          </li>
+          <li>
+            <a href="#our-skills"> Tables</a>
+          </li>
+          <li>
+            <a href="#events">Room Sets</a>
+          </li>
+          </ul>
+        </div>
+    </li>
+        <!-- end megamenu -->
+        <li style="display: flex; align-items: center;"><a href="homedecor.html" >Kids Room</a><i onclick=myFunctiontwo() class="fa-solid fa-caret-down icon3"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu two">
+      <ul class="links">
+        <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="electricals.html">Chairs</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Sofas</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Tables</a>
+        </li>
+        <li>
+          <a href="#events">Room Sets</a>
+        </li>
+      </ul>
+     
+    </div>
+    </li>
+    <!-- end megamenu -->
+        <li style="display: flex; align-items: center;" ><a href="#features" >Dinning Room</a><i onclick=myFunctionthree() class="fa-solid fa-caret-down icon4"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu three">
+      <ul class="links">
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#services">Mirrors</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Storages</a>
+        </li>
+        <li>
+          <a href="#work-steps">Dinning room sets</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+    <!-- end megamenu -->
+        <li style="display: flex; align-items: center;"  ><a href="#features" >Living Room</a><i onclick=myFunctionfour() class="fa-solid fa-caret-down icon5"></i>
+         <!-- start Megamenu -->
+    <div class="mega-menu four">
+      <ul class="links">
+        <li>
+          <a href="#"> Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Side tables</a>
+        </li>
+        <li>
+          <a href="#services">Credenza</a>
+        </li>
+        <li>
+          <a href="#our-skills">lighting</a>
+        </li>
+        <li>
+          <a href="#work-steps">Cabinet</a>
+        </li>
+      </ul>
+    </div>
+    </li>
+    <!-- end megamenu -->
+    <li style="display: flex; align-items: center;"><a href="#features" >Kitchen</a><i onclick=myFunctionfive() class="fa-solid fa-caret-down icon6"></i>
+           <!-- start Megamenu -->
+           <div class="mega-menu five">
+            <ul class="links">
+              <li>
+                <a href="#"> Countertops </a>
+              </li>
+              <li>
+                <a href="#">Buffet</a>
+              </li>
+              <li>
+                <a href="#services">Tables</a>
+              </li>
+              <li>
+                <a href="#our-skills">Stoves</a>
+              </li>
+              <li>
+                <a href="#work-steps">Refigerator</a>
+              </li>
+            </ul>
+          </div>
+            <!-- end megamenu -->
+          </li>
+          <li style="display: flex; align-items: center;" ><a href="#features" >Bathroom</a><i onclick=myFunctionsix() class="fa-solid fa-caret-down icon7"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu six">
+             <ul class="links">
+               <li>
+                 <a href="#"> Bathtub</a>
+               </li>
+               <li>
+                 <a href="#">Toilet</a>
+               </li>
+               <li>
+                 <a href="#services">Shower</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Freestanding Bath</a>
+               </li>
+               <li>
+                 <a href="#work-steps">Bathroom sets</a>
+               </li>
+             </ul>
+            
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          <li style="display: flex; align-items: center;"><a href="#features" >Home Decor</a><i onclick=myFunctionseven() class="fa-solid fa-caret-down icon8"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu seven">
+             <ul class="links">
+               <li>
+                 <a href="#">Accessories</a>
+               </li>
+               <li>
+                 <a href="#">Mirrors</a>
+               </li>
+               <li>
+                 <a href="#services"> Rug</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Plant</a>
+               </li>
+               <li>
+                 <a href="#work-steps">Frames</a>
+               </li>
+             </ul>
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          <li style="display: flex; align-items: center;"><a href="#features" >Painting & Floor</a><i onclick=myFunctioneight() class="fa-solid fa-caret-down icon8"></i>
+            <!-- start Megamenu -->
+            <div class="mega-menu eight">
+             <ul class="links">
+               <li>
+                 <a href="#">Ceramic</a>
+               </li>
+               <li>
+                 <a href="#">Paint colors</a>
+               </li>
+               <li>
+                 <a href="#services"> Paint tools</a>
+               </li>
+               <li>
+                 <a href="#our-skills">Marble</a>
+               </li>
+               
+             </ul>
+           </div>
+             <!-- end megamenu -->
+           </li>     
+          </ul>
+    </div>
+    </div>
+  </div>
+  <div class="backbar">
+  <div class="respside-bar">
+   <span class="catigories">All Catigories<i onclick=hidesidebar() class="fa-solid fa-xmark"></i></span> 
+    <ul class="side-menu">
+      <li ><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="service.html">Services </a><i onclick=toggleone() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open1 ">
+        <li>
+          <a href="plumbers.html"> Plumbers</a>
+        </li>
+        <li>
+          <a href="electricals.html">Electricals</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Carpenters</a>
+        </li>
+        <li>
+          <a href="painters.html">Painters</a>
+        </li>
+
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title " href="#">Master Room </a><i  onclick=toggletwo() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open2">
+       <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#">Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Room Sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Kids Room </a><i onclick=togglethree() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open3">
+        <li>
+          <a href="Beds.html"> Beds</a>
+        </li>
+        <li>
+          <a href="electricals.html">Chairs</a>
+        </li>
+        <li>
+          <a href="carpenters.html">Sofas</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Tables</a>
+        </li>
+        <li>
+          <a href="#events">Room Sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Dinning Room </a><i onclick=togglefour() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open4">
+        <li>
+          <a href="#"> Tables</a>
+        </li>
+        <li>
+          <a href="#">Chairs</a>
+        </li>
+        <li>
+          <a href="#services">Mirrors</a>
+        </li>
+        <li>
+          <a href="#our-skills"> Storages</a>
+        </li>
+        <li>
+          <a href="#work-steps">Dinning room sets</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Living Room </a><i  onclick=togglefive() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open5">
+        <li>
+          <a href="#"> Sofas</a>
+        </li>
+        <li>
+          <a href="#"> Side tables</a>
+        </li>
+        <li>
+          <a href="#services">Credenza</a>
+        </li>
+        <li>
+          <a href="#our-skills">lighting</a>
+        </li>
+        <li>
+          <a href="#work-steps">Cabinet</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Kitchen </a><i  onclick=togglesix() class="fa-solid fa-arrow-right"></i>
+      </div>
+      <ul class="small-menu open6">
+        <li>
+          <a href="#"> Countertops </a>
+        </li>
+        <li>
+          <a href="#">Buffet</a>
+        </li>
+        <li>
+          <a href="#services">Tables</a>
+        </li>
+        <li>
+          <a href="#our-skills">Stoves</a>
+        </li>
+        <li>
+          <a href="#work-steps">Refigerator</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Bathroom </a><i  onclick=toggleseven() class="fa-solid fa-arrow-right"></i>
+      </div>
+        <ul class="small-menu open7">
+          <li>
+            <a href="#"> Bathtub</a>
+          </li>
+          <li>
+            <a href="#">Toilet</a>
+          </li>
+          <li>
+            <a href="#services">Shower</a>
+          </li>
+          <li>
+            <a href="#our-skills">Freestanding Bath</a>
+          </li>
+          <li>
+            <a href="#work-steps">Bathroom sets</a>
+          </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Home Decor </a><i onclick=toggleeight()  class="fa-solid fa-arrow-right"></i></div>
+      <ul class="small-menu open8">
+        <li>
+          <a href="#">Accessories</a>
+        </li>
+        <li>
+          <a href="#">Mirrors</a>
+        </li>
+        <li>
+          <a href="#services"> Rug</a>
+        </li>
+        <li>
+          <a href="#our-skills">Plant</a>
+        </li>
+        <li>
+          <a href="#work-steps">Frames</a>
+        </li>
+      </ul></li>
+      <li><div style="display: flex; align-items: center; justify-content: space-between;"><a class="main-title" href="#">Painting & Floor</a><i onclick=togglenine()  class="fa-solid fa-arrow-right"></i></div>
+      <ul class="small-menu open9">
+        <li>
+          <a href="#">Ceramic</a>
+        </li>
+        <li>
+          <a href="#">Paint colors</a>
+        </li>
+        <li>
+          <a href="#services"> Paint tools</a>
+        </li>
+        <li>
+          <a href="#our-skills">Marble</a>
+        </li>
+      </ul></li>
+    </ul>
+  </div>
+</div>
+<!--start cart side bar -->
+<div class="cart-sidebar-overlay">
+  <div class="cart-side-bar">
+    <i onclick="closesidebarcart()" class="fa-solid fa-circle-xmark close-cartside"></i>
+    <p class="first-p">My Cart <span class="item-no">2 items</span></p>
+    <div class="total-money-sidebar">
+      <h4>Cart Summary</h4>
+      <p class="side-amount">Subtotal <span>56000 EGP</span></p>
+    </div>
+    <div class="content-cart-bar">
+      <img src="imgs/02.jpg">
+      <div class="product-cart-info">
+        <h3>Beech Wood and Linen Fabric L-Shape Sofa - Grey</h3>
+        <h3 class="sname"><i class="fa-solid fa-store"></i>Store name</h3>
+        <p class="price">
+          EGP 25000
+        </p>
+        <div class="buttons">
+          <div class="add">
+              <span class="minus">-</span>
+              <span class="num">01</span>
+              <span class="plus">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-cart-bar">
+      <img src="imgs/avatar-03.png">
+      <div class="product-cart-info">
+        <h3>Hazem Khaled</h3>
+        <h3 class="sname">Plumber</h3>
+      </div>
+    </div>
+    <div class="side-checkout">
+      <a href="cart.html">
+      <button type="button">Go To Cart</button>
+    </a>
+    </div>
+    <div class="cart-empty">
+      <div class="empty-cart">
+        <img src="imgs/cartempty.png">
+        <p>Your cart is empty</p>
+        <span>let’s do some shopping</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--end cart side bar -->
+  </nav>
+<!-- end navvv -->
+<!-- start page content -->
+<div class="view-order-invoices">
+    <div class="side-bar">
+        <div class="name">
+          <h2>Hi, Jolly!</h2>
+          <p>jollynessem@gamil.com</p>
+        </div>
+        <div class="list">
+             <div class="row">
+                <i class="fa-regular fa-address-card"></i>
+                <a href="profile.html"><h4>Profile</h4></a>
+            </div> 
+             <div class="row">
+                <i class="fa-solid fa-rectangle-list"></i>
+                <a href="orders.html"><h4 class="active">Orders</h4></a>
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-heart"></i>
+               <a href="wishlist.html"><h4>Wishlist</h4></a> 
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="address.html"><h4>Address</h4></a>
+            </div>     
+        </div>
+    </div>
+    <div class="invoice-info">
+        <div class="Right-sidepage">
+       <a class="backto-order" href="tracking-details.html"><span><i class="fa-regular fa-circle-left"></i> Back to tracking details</span></a> 
+        <h2>Order Summary</h2>
+        <span class="note">Find order invoice, payment and shipping details here</span>
+        <div class="order-id">
+            <p>Order ID N400939030</p>
+            <span>Placed on 05 Apr 2024</span>
+        </div>
+        <div class="delivery-details">
+            <h3>Delivery Details</h3>
+            <div class="delivery-date">
+                <p> Delivered on 
+                    Thursday, 14th Mar, 02:41 PM
+                    </p>
+            </div>
+            <div class="item-summary-box">
+              <a href="product.html">
+                <img src="imgs/01.jpg"></a>
+                <div>
+                <h4>Beech Wood and Linen Fabric L-Shape Sofa - Grey</h4>
+            <h3 class="sname"><i class="fa-solid fa-store"></i>Store name</h3>
+            <p class="price">
+                EGP 20050
+              </p>
+        </div>
+            </div>
+            <div class="item-summary-box">
+              <a href="product.html">
+                <img src="imgs/03.jpg"></a>
+                <div>
+                <h4>Beech Wood and Linen Fabric L-Shape Sofa - Grey</h4>
+            <h3 class="sname"><i class="fa-solid fa-store"></i>Store name</h3>
+            <p class="price">
+                EGP 20050
+              </p>
+        </div>
+            </div>
+        </div>
+</div>
+<div class="invoice-summary">
+<div class="order-invoice">
+    <h3>Order Invoice</h3>
+    <div class="bill">
+        <div class="subtotal">
+            <h4>Subtotal</h4>
+            <p>EGP 25000</p>
+        </div>
+        <div class="discount-code">
+            <h4>Coupon</h4>
+            <p>- EGP 500</p>
+        </div>
+        <div class="shipping-fees">
+            <h4>Shipping Fees</h4>
+            <p>EGP 50</p>
+        </div><hr>
+        <div class="order-total">
+            <h4>Order Total</h4>
+            <p>EGP 20050</p>
+        </div>
+    </div>
+    <div class="pay-method">
+        <h4>Pay method</h4>
+        <p><i class="fa-solid fa-money-bill"></i> Cash On Delivery</p>
+    </div>
+    <div class="delivery-address">
+        <h3>Delivery address</h3>
+        <div class="sub-address">
+            <span>Jolly nessem</span>
+            <p>
+                بجوار مكتبه العاصمه في شارع احمد جبر،الدور السابع شقه ٣٥, Ain Shams, Egypt</p>
+                <span>+20-12-88642523</span>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- end page content -->
+        <!-- scroll up -->
+        <button class="scroll"><i class="fa-solid fa-circle-arrow-up"></i></button>
+        <!-- end scroll -->
+      <!-- footer -->
+      <footer>
+        <div class="container">
+      <div class="topp">
+        <div class="links">
+          <div class="links-column">
+            <h2>Company</h2>
+            <a href="#">About us</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="links-column">
+            <h2>Important Links</h2>
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="returnpolicy.html">Return Policy</a>
+            <a href="termspolicy.html">Terms and conditions</a>
+           
+          </div>
+          <div class="links-column">
+            <h2>Need Help</h2>
+            <a href="#"><i class="fas fa-envelope"></i>Nestopia24@gmail.com</a>
+          </div>
+          </div>
+        </div>
+        <div class="bottom">
+        <div class=" socials-column">
+          <h2> Social media</h2>
+          <p>Follow us</p>
+          <div class="socials">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-google"></i>
+          </a>
+          <a href="#" >
+              <i class="fab fa-linkedin-in"></i>
+          <a href="#" >
+            <i class="fa-brands fa-square-instagram"></i>
+        
+           
+          </div>
+        </div>
+        <div class="pay-method">
+          <h2>We Accept</h2>
+          <div class="payment">
+          <img src="imgs/visa.png">
+          <img src="imgs/valu.jpeg">
+          <img src="imgs/ins.webp">
+          <img src="imgs/master.png">
+        </div>
+      </div>
+        </div>
+        <p class="copy-right">@ 2024 all rights reserved</p>
+      </div>
+      </footer>
+    <!-- </footer> -->
+     <script src="js/main.js"></script>
+    <script>
+      
+// +&- product
+const plus=document.querySelector(".plus");
+const minus=document.querySelector(".minus");
+const num=document.querySelector(".num");
+
+let a=1;
+plus.addEventListener("click",()=>{
+    a++;
+    a=(a<10)?"0"+a:a;
+    num.innerText=a;
+});
+
+minus.addEventListener("click",()=>{
+    if(a>1){
+    a--;
+    a=(a<10)?"0"+a:a;
+    num.innerText=a;
+    }
+});
+// --------------------------------------------------------------------------
+    </script>
+</body>
+</html>
